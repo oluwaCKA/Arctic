@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="50x50" href="./Assets/icon.png" />
+    <title>Arctic Travels</title>
+    <script
+      src="https://kit.fontawesome.com/3ea4554d7e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- Navbar Section -->
+      <nav class="navbar">
+        <div class="navbar__container">
+          <a href="#" id="navbar__logo"
+            ><img
+              src="./Assets/arctic logo .svg"
+              alt="logo"
+              class="navbar__img"
+          /></a>
+          <ul class="navbar__menu">
+            <li class="navbar__item">
+              <a href="./index.html#home" class="nav__links" id="home-page"
+                >Home</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a href="./index.html#about" class="nav__links" id="about-page"
+                >About</a
+              >
+            </li>
+            <li class="navbar__item">
+              <a
+                href="./index.html#features"
+                class="nav__links"
+                id="features-page"
+                >Features</a
+              >
+            </li>
+
+            <li class="navbar__item">
+              <a
+                href="./index.html#contact"
+                class="nav__links"
+                id="contact-page"
+                >Contact Us</a
+              >
+            </li>
+
+            <!-- <li class="navbar__item">
+                        <a href="#" class="nav__links"><button class="navbar__btn signIn">Sign In</button></a>
+                    </li> -->
+          </ul>
+
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Navbar Ends -->
+
+    <main>
+      <!-- Home Section -->
+      <div class="home" id="home">
+        <div class="home__container">
+          <div class="home__wrapper">
+            <div class="home__heading">
+              <h1>Plan the perfect winter trip</h1>
+            </div>
+            <div class="home__description">
+              <p>
+                Easily plan your ideal ski trip from home with the help of
+                professionals
+              </p>
+            </div>
+            <form action="">
+              <div class="cta-card">
+                <label for="region"
+                  ><i class="fa-solid fa-location-dot"></i
+                ></label>
+                <select>
+                  <option value="region">Region</option>
+                  <option value="iceland">Iceland</option>
+                  <option value="norway">Norway</option>
+                  <option value="greenland">Greenland</option>
+                  <option value="russia">Russia</option>
+                  <option value="finland">Finland</option>
+                  <option value="canada">Canada</option>
+                </select>
+                <!-- <i class="fa-regular fa-calendar"></i> -->
+                <label for="date">Date</label>
+                <input
+                  type="date"
+                  name="begin"
+                  placeholder="dd-mm-yyyy"
+                  value=""
+                  min="2023-01-01"
+                  max="2024-12-31"
+                  id="date"
+                />
+
+                <label for="location"><i class="fa-solid fa-person"></i></label>
+                <select>
+                  <option value="Travelers">Travelers</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5-10">5-10</option>
+                  <option value="11-15">11-15</option>
+                  <option value="15+">15+</option>
+                </select>
+              </div>
+              <input type="submit" value="Book here" class="bookHere" />
+            </form>
+          </div>
+        </div>
+      </div>
+      <!-- Home Ends -->
+
+      <!-- About Us -->
+      <div class="about card" id="about">
+        <div class="about-us__container">
+          <div class="about-us__wrapper">
+            <div class="about-us__header">
+              <h2>About Us</h2>
+              <hr />
+            </div>
+            <div class="about-us__description">
+              <p>
+                Arctic Travels, a traveling agency that focusses on skiing and
+                snowboarding holidays. On our website ArcticTravels.com, clients
+                can easily plan their trip exactly to how they desire, keep
+                track of their planned trip and ask questions to our specialized
+                travel agents when necessary. We are all about luxurious quality
+                as well as getting the best possible price for your trip.
+              </p>
+            </div>
+          </div>
+          <div class="about-us_img">
+            <img src="./Assets/pexels-gustavo-fring-6699206.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- About Us Ends -->
+
+      <!-- Features Section -->
+      <div class="features card" id="features">
+        <div class="features__container">
+          <div class="features__wrapper">
+            <div class="regions">
+              <div class="features__heading">
+                <h3>Explore Regions and Lodgings</h3>
+              </div>
+              <div class="features__description">
+                <p>
+                  We have reached various interesting areas. Explore the regions
+                  you want and start your adventure.
+                </p>
+              </div>
+
+              <section class="card-list">
+                <div class="region-img cards">
+                  <div class="img">
+                    <img
+                      src="./Assets/pexels-sol-pinto-13257073.jpg"
+                      alt="canada"
+                    />
+                    <span class="img-name">Canada</span>
+                  </div>
+
+                  <div class="img">
+                    <img
+                      src="./Assets/pexels-sveta-k-8568876.jpg"
+                      alt="russia"
+                    />
+                    <span class="img-name">Russia</span>
+                  </div>
+
+                  <div class="img">
+                    <img
+                      src="./Assets/pexels-alice-martini-7089870.jpg"
+                      alt="norway"
+                    />
+                    <span class="img-name">Norway</span>
+                  </div>
+                </div>
+              </section>
+
+              <div class="region-btn">
+                <button class="region_btn">Explore Regions</button>
+              </div>
+            </div>
+
+            <div class="lodge__container">
+              <div class="lodge__wrapper">
+                <div class="lodge__heading">
+                  <h3>Comfortable Lodgings</h3>
+                  <hr />
+                </div>
+                <div class="lodge__description">
+                  <p>We offer you the best lodging to enjoy your experience</p>
+                </div>
+                <section class="card-list lodge">
+                  <div class="region-img cards">
+                    <div class="img">
+                      <img
+                        src="./Assets/pexels-darina-belonogova-7406807.jpg"
+                        alt="Okedele's Place"
+                      />
+                      <span class="lodge-name">The Okedele's hostel</span>
+                    </div>
+
+                    <div class="img">
+                      <img
+                        src="./Assets/pexels-attie-heunis-9297000.jpg"
+                        alt="pel's place"
+                      />
+                      <span class="lodge-name">Pel's Place</span>
+                    </div>
+
+                    <div class="img">
+                      <img
+                        src="./Assets/pexels-darina-belonogova-7406685.jpg"
+                        alt="Demi's House"
+                      />
+                      <span class="lodge-name">Demi's House</span>
+                    </div>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div class="feedback">
+              <div class="customer__heading">
+                <h3>Customer's Feedback</h3>
+              </div>
+              <section class="customer--review card-list">
+                <div class="customer-review__container">
+                  <div class="customer-review__wrapper">
+                    <div class="cards-review cards">
+                      <img
+                        src="./Assets/pexels-gaspar-zaldo-13451864.jpg"
+                        alt=""
+                        class="review-img"
+                      />
+                      <span class="review-name">Whitney: </span>
+                      <p class="review">
+                        "This experience was premium and value for money"
+                      </p>
+                    </div>
+
+                    <div class="cards-review cards">
+                      <img
+                        src="./Assets/pexels-greengrey-darya-15475976.jpg"
+                        alt=""
+                        class="review-img"
+                      />
+                      <span class="review-name">Paul: </span>
+                      <p class="review">
+                        "Arctic Travels is a world reowned travel agency that
+                        has served me over over the years in terms of
+                        adventurous holidays. I would recommend to my friends,
+                        only problem is the hefty price tag"
+                      </p>
+                    </div>
+
+                    <div class="cards-review cards">
+                      <img
+                        src="./Assets/pexels-christopher-beck-1738155.jpg"
+                        alt=""
+                        class="review-img"
+                      />
+                      <span class="review-name">Destiny: </span>
+                      <p class="review">
+                        "Arctic Travels is what I would call a home away from
+                        the stress of the city, it's where I can be me and
+                        explore that adventerous side"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+          <div class="features--cta">
+            <h3>Are you ready to explore the unexplorable?</h3>
+            <input
+              type="submit"
+              value="Book here"
+              class="bookHere features-cta"
+            />
+          </div>
+        </div>
+        <!-- Features Ends -->
+
+        <!-- Contact Us Section -->
+        <div class="contact" id="contact">
+          <section class="contact__container">
+            <div class="contact__heading">
+              <h3>Get in touch with our Agents</h3>
+              <p>
+                It's never too soon to get in touch, we are always eager to help
+                out!
+              </p>
+              <button class="contactBtn">Contact Us →</button>
+            </div>
+          </section>
+        </div>
+        <!-- Contact Us Section Ends -->
+
+        <!-- Footer Section -->
+        <footer>
+          <div class="footer__container">
+            <section class="footer__wrapper">
+              <div class="footer__logo foot">
+                <a href="#"
+                  ><img src="./Assets/arctic logo .svg" class="footer-img"
+                /></a>
+                <div class="footer_icons">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter icon"></i></a>
+                  <a href="#"><i class="fa-brands fa-instagram icon"></i></a>
+                </div>
+              </div>
+              <div class="contact-footer foot">
+                <h3>CONTACT</h3>
+                <hr />
+                <p>hello@arctictravels.com</p>
+                <p>+1 (425) 419-2102</p>
+              </div>
+              <div class="company foot">
+                <h3>COMPANY</h3>
+                <hr />
+                <a href="./index.html#about"><p>About Us</p></a>
+                <a href="./index.html#contact"><p>Need help?</p></a>
+              </div>
+            </section>
+            <p class="attribution">
+              Privacy Statement | Terms of use | All Rights Reserved
+            </p>
+          </div>
+        </footer>
+        <!-- Footer Ends -->
+      </div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
